@@ -1,0 +1,11 @@
+# claims-domain
+
+This library was generated with [Nx](https://nx.dev).
+
+## Building
+
+Run `nx build claims-domain` to build the library.
+
+## Running unit tests
+
+Run `nx test claims-domain` to execute the unit tests via [Vitest](https://vitest.dev/).

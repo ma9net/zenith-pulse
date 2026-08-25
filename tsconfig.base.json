@@ -23,7 +23,16 @@
       "@org/shop/feature-products": [
         "./packages/shop/feature-products/src/index.ts"
       ],
-      "@org/shop/shared-ui": ["./packages/shop/shared-ui/src/index.ts"]
+      "@org/shop/shared-ui": ["./packages/shop/shared-ui/src/index.ts"],
+      "@org/domain": ["./libs/shared/domain/src/index.ts"],
+      "@org/claims-domain": ["./libs/claims/domain/src/index.ts"],
+      "@org/claims-data-access": ["./libs/claims/data-access/src/index.ts"],
+      "@org/revenue-intelligence-domain": [
+        "./libs/revenue-intelligence/domain/src/index.ts"
+      ],
+      "@org/revenue-intelligence-data-access": [
+        "./libs/revenue-intelligence/data-access/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]

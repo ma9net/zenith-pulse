@@ -1,0 +1,19 @@
+{
+  "name": "revenue-intelligence-domain",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/revenue-intelligence/domain/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/revenue-intelligence/domain",
+        "main": "libs/revenue-intelligence/domain/src/index.ts",
+        "tsConfig": "libs/revenue-intelligence/domain/tsconfig.lib.json",
+        "assets": ["libs/revenue-intelligence/domain/*.md"]
+      }
+    }
+  }
+}
