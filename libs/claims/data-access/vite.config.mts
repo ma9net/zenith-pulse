@@ -8,7 +8,7 @@ export default defineConfig(() => ({
   root: __dirname,
   cacheDir: '../../../node_modules/.vite/libs/claims/data-access',
   plugins: [angular(), nxViteTsPaths(), nxCopyAssetsPlugin(['*.md'])],
-  // Uncomment this if you are using workers.
+  // Uncomment this for using workers.
   // worker: {
   //   plugins: () => [ nxViteTsPaths() ],
   // },
@@ -18,6 +18,9 @@ export default defineConfig(() => ({
     globals: true,
     environment: 'jsdom',
     include: ['{src,tests}/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
+    // The generator's placeholder Angular component was removed: templates are
+    // not a data-access concern.
+    passWithNoTests: true,
     setupFiles: ['src/test-setup.ts'],
     reporters: ['default'],
     coverage: {
