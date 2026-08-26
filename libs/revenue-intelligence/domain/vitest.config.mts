@@ -12,6 +12,8 @@ export default defineConfig(() => ({
     globals: true,
     environment: 'node',
     include: ['{src,tests}/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
+    // Scaffolded but not yet implemented.
+    passWithNoTests: true,
     reporters: ['default'],
     coverage: {
       reportsDirectory: '../../../coverage/libs/revenue-intelligence/domain',
